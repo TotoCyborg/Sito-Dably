@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+}
+
+@font-face {
+    font-family: "OutfitLight";
+    src: url(../assets/fonts/Outfit-Light.ttf);
+}
+
+@font-face {
+    font-family: "OutfitBold";
+    src: url(../assets/fonts/Outfit-Bold.ttf);
+}

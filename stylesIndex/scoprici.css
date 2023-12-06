@@ -1,0 +1,28 @@
+#scoprici{
+    flex-direction: row;  
+    display: flex;  
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(229, 231, 235);
+}
+
+#scoprici img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+#scoprici h1{
+    font-family: 'OutfitBold';
+    font-size: 60px;
+}
+
+#scoprici p{
+    font-family: 'OutfitLight';
+    font-size: 20px;
+}
+
+#scoprici li{
+    list-style-type: none;
+}

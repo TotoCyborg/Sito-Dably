@@ -1,0 +1,19 @@
+#obiettivo{
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+#obiettivo h1{
+    font-family: 'OutfitBold';
+    font-size: 60px;
+}
+
+#obiettivo h3{
+    font-family: 'OutfitLight';
+}

@@ -1,0 +1,23 @@
+#contattaci{
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+}
+
+#contattaci img{
+    border-radius: 10px;
+}
+
+#contattaci h1{
+    font-family: 'OutfitBold';
+    font-size: 60px;
+} 
+
+#contattaci h3{
+    font-family: 'OutfitLight';
+} 

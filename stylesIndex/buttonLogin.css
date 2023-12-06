@@ -1,0 +1,19 @@
+#buttonLogin{
+    flex-direction: row;  
+    display: flex;  
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#buttonLogin button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}

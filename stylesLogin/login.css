@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "OutfitLight";
+  src: url(../assets/fonts/Outfit-Light.ttf);
+}
+
+@font-face {
+  font-family: "OutfitBold";
+  src: url(../assets/fonts/Outfit-Bold.ttf);
+}
+
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+/*Queste regole CSS gestiscono lo stile della selezione del testo nelle diverse implementazioni dei browser.*/
+
+body {
+  background: #e2e2e5;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+/*Questa sezione imposta il colore di sfondo, il tipo di carattere e i margini e i padding.*/
+
+.page {
+  background: #e2e2e5;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+/*il contenitore principale della pagina, imposta il colore di sfondo,
+ la disposizione flessibile in colonna, l'altezza calcolata in base all'altezza della finestra del browser e altre proprietà.*/
+
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+/*regola lo stile della classe .page per schermi con larghezza massima di 767 pixel*/
+
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+/*contenitore flessibile con un'altezza e larghezza fissa, margini automatici.*/
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+/*regola lo stile della classe .container per schermi con larghezza massima di 767 pixel*/
+
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+/*rappresenta il lato sinistro del contenitore, con sfondo bianco, altezza calcolata, posizione relativa e larghezza del 50%.*/
+
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+/*regola lo stile della classe .left per schermi con larghezza massima di 767 pixel*/
+
+.login {
+  font-size: 50px;
+  font-family: 'OutfitBold';
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+/*regola lo stile del testo di login, impostando la dimensione del carattere e i margini.*/
+
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'OutfitLight';
+  margin: 40px;
+}
+/*regola lo stile del testo sotto il login, impostando il colore, la dimensione del carattere, l'interlinea e i margini.*/
+
+.right {
+  background: black;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+/*rappresenta il lato destro del contenitore, con sfondo specifico, ombra e colore del testo.*/
+
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+/*regola lo stile della classe .right per schermi con larghezza massima di 767 pixel*/
+
+svg {
+  position: absolute;
+  width: 320px;
+}
+/*regola che gestisce lo stile degli elementi SVG, posizionandoli in modo assoluto e impostando una larghezza di 320 pixel.*/
+
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+/*gestisce lo stile dei percorsi SVG, impostando il riempimento a nessuno, il colore di tracciamento da un gradiente definito da un'istanza di linearGradient, 
+la larghezza del tratto a 4 pixel e un modello di tratto punteggiato con una lunghezza di tratto e uno spazio specificati.*/
+
+.form {
+  margin: 40px;
+  position: absolute;
+}
+/*rappresenta un modulo, impostando i margini e la posizione assoluta.*/
+
+label {
+  color:  white;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/*gestisce lo stile dell'etichette del modulo, impostando il colore, la visualizzazione come blocco, 
+la dimensione del carattere, l'altezza e i margini superiori e inferiori.*/
+
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+/*gestisce lo stile degli input del modulo, impostando lo sfondo trasparente, la rimozione del bordo, 
+il colore del testo, la dimensione del carattere, l'altezza della riga, l'eliminazione del contorno di focus e la larghezza al 100%.*/
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+
+#submit:focus {
+  color: #f2f2f2;
+}
+
+#submit:active {
+  color: #d0d0d2;
+}
+/*gestiscono lo stile del pulsante di invio del modulo, impostando il colore di base, 
+regolando il colore durante il focus e durante l'azione di clic. La transizione del colore avviene in 300 millisecondi.*/

@@ -1,0 +1,42 @@
+#navbar {
+    background-color: #000000;
+    height: 10%;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+#navbar img {
+    height: 50%;
+    width: auto;
+}
+#navlinks {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 100%;
+}
+
+#navbar a {
+    color: white;
+    font-family: 'OutfitBold';
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+#navbar a:hover {
+    transform: scale(1.2);
+  }
+
+
+  
+  
+
+  

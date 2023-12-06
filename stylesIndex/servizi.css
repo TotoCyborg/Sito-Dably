@@ -1,0 +1,43 @@
+#servizi{
+    flex-direction: column;  
+    display: flex;  
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#title{
+    font-family: 'OutfitBold';
+    font-size: 60px;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container li{
+    padding: 30px;
+    list-style-type: none;
+}
+
+#container p{
+    font-family: 'OutfitLight';
+}
+
+#container h1{
+    font-family: 'OutfitBold';
+    font-size: 20px;
+}
+
+#container img{
+    width: 350px;
+}
